@@ -24,18 +24,20 @@ body {
 	display: flex;
 	background-color: #333;
 	align-items: center;
+  
 }
 
 .navigation li {
 	flex: 1 1 auto;
 }
+
 .navigation a {
 	display: block;
 	color: #eee;
 	padding: 0.75rem;
 	text-decoration: none;
 	text-align: center;
-
+  
 }
 .navigation a:hover {
 	font-weight: 700;

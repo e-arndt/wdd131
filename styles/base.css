@@ -122,7 +122,6 @@ h3 {
 
 h4 {
     color: black;
-    padding-top: 2rem;
     font-size: 1.75rem;
     grid-column: 1 / 2;
     text-align: center;
@@ -136,33 +135,37 @@ hr {
     text-align:center;
 }
 
+.info {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+}
+
 .flag {
-    max-width: 500px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
 }
 
 
 .flag img {
-    
-    width: 400px; 
+    width: 400px;
     height: auto;
     border: 3px solid steelblue; 
     box-shadow: 0 0 45px gray;
-    margin: 1.5rem 2rem 0rem 3rem;
-    float: left;
+    margin: 2.5rem 2rem 1rem 0rem;
 }
 
-
-.local p {
+.info p {
     font-size: 1.2rem;
-    
-    
+    grid-column: 2 / 3;
+    margin-top: -1rem;
+    margin-right: 2rem;
 }
 
 .flag figcaption {
-    width: 200px;
     font-size: 1.2rem;
-    padding-top: 13rem;
-    padding-left: 7rem;
+   
+    text-align: center;
+
 }
 
 .card2 {
@@ -187,15 +190,13 @@ hr {
 
 .resources li {
     padding-top: 2rem;
-    margin-top: 5px;
-}
-
-ul.resources {
-    min-height: 65vh;
     
 }
 
-
+ul.resources {
+    min-height: 96.3vh;
+    
+}
 
 footer {
     background: rgb(38, 81, 106);

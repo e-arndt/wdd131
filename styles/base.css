@@ -112,7 +112,7 @@ h3 {
 
 .psec1 {
     color: black;
-    border: 3px solid black;
+    border: 2px solid black;
     min-height: auto;
     border-style: none solid solid solid;
     border-radius: 0 0 15px 15px;
@@ -181,7 +181,7 @@ hr {
 }
 
 .resources {
-    border: 3px solid black;
+    border: 2px solid black;
     border-style: none solid solid solid;
     border-radius: 0 0 15px 15px;
     margin-top: -30px;
@@ -190,11 +190,10 @@ hr {
 
 .resources li {
     padding-top: 2rem;
-    
 }
 
 ul.resources {
-    min-height: 96.3vh;
+    height: 96.5vh;
     
 }
 

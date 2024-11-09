@@ -82,16 +82,6 @@ h2 {
     padding: 1rem;
 }
 
-h4 {
-    background: rgb(38, 81, 106);
-    grid-column: 2 / 4;
-    color: ghostwhite;
-    text-align: center;
-    font-size: 1.5rem;
-    margin-top: 25px;
-    border-radius: 15px 15px 0 0;
-    padding: 1rem;
-}
 
 .section {
     display: grid;
@@ -133,6 +123,17 @@ hr {
     border-top: 1px solid black;
     width:75%;
     text-align:center;
+}
+
+h4 {
+    background: rgb(38, 81, 106);
+    grid-column: 2 / 4;
+    color: ghostwhite;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 25px;
+    border-radius: 15px 15px 0 0;
+    padding: 1rem;
 }
 
 .info {

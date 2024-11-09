@@ -8,5 +8,3 @@ const formatDate = new Intl.DateTimeFormat("en-US", {
 const currentDate = new Date();
 yearSpan.innerText = currentDate.getFullYear();
 updateTime.innerText = (formatDate.format(currentDate));
-
-

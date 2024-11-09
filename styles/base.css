@@ -4,6 +4,10 @@ body {
     color: ghostwhite;
   }
 
+#hcolor {
+    color: gold;
+}
+
 .card1 img {
     width: 225px; 
     height: auto;

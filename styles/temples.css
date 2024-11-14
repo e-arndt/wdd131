@@ -1,0 +1,186 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+h1 {
+    display: block;
+    font-size: 1.5rem;
+    text-align: left;
+    white-space: nowrap;
+    padding: 10px 0 10px 20px;
+}
+
+
+body {
+	font-family: Roboto, sans-serif;
+    background-color: ghostwhite;
+}
+
+
+/* Mobile View ***************/
+#menu {
+	/* display: block; */
+	font-size: 1.2rem;
+    position: absolute;
+    top: 2px;
+    right: 15px;
+	font-weight:700;
+	text-decoration: none;
+	padding: .5rem .75rem;
+	background-color: rgb(255, 123, 100);
+	color: black;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+
+#menu::before {
+	content: "≡";
+}
+
+
+.active::before {
+	content: "▶";
+}
+
+
+.head-wrapper {
+    display: flex;
+}
+
+
+nav {
+    display: flex;
+    
+	background-color: rgb(255, 123, 100);
+    
+    /* max-width: 100%; */
+    flex: 1 1 auto;
+}
+
+
+.navigation {
+	list-style: none;
+    padding-right: 7rem;
+    margin: 0 auto 0 auto;
+}
+
+
+.nav ul {
+    display: block;
+}
+
+
+.navigation li {
+	display: none;
+}
+
+
+.navigation a {
+	display: block;
+	padding: .75rem;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1.25rem, 2vmin, 1.5rem);
+}
+
+
+.navigation a:hover, navigation a:active {
+	color: white;
+	background-color: black;
+}
+
+
+.show li {
+	display: block;
+    width: auto;
+}
+
+
+#menu.show::before {
+	content: "X";
+}
+
+
+figure {
+    margin: 0 auto;
+    
+}
+
+
+figcaption {
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+
+main {
+
+    display: grid;
+    margin-top: 10px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 330px);
+    grid-gap: 5px;
+    align-items: center;
+    justify-content: center;
+    max-width: auto;
+    
+}
+
+
+main > img {
+    max-width: 5%;
+    height: auto;
+    
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+    main{
+    display: grid;
+    margin-top: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 330px);
+    grid-gap: 5px;
+    align-items: center;
+    justify-content: center;
+    }
+
+}
+
+
+@media only screen and (max-width: 825px) {
+
+    main{
+    display: grid;
+    margin-top: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 330px);
+    grid-gap: 5px;
+    align-items: center;
+    justify-content: center;
+    }
+
+}
+
+
+@media only screen and (max-width:590px) {
+
+    main{
+        display: grid;
+        margin-top: 10px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 330px);
+        grid-gap: 5px;
+        align-items: center;
+        justify-content: center;
+        }
+
+}

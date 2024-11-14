@@ -1,0 +1,61 @@
+/* Media Query for wider than mobile viewports. Breakpoint should be based upon the design and content and use em units to be relative to the user's font size versus fixed with pixels.  
+
+In most WDD courses there is a requirement to use a separate file. This part would go into a separate CSS file. 
+*/
+@media only screen and (min-width: 40em) {
+	
+    .head-wrapper {
+        display: flex;
+    }
+    
+
+    nav {
+        display: flex;
+        background-color: rgb(255, 123, 100);
+    }
+    
+
+    .navigation {
+        list-style: none;
+	}
+
+
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+        flex: 1 1 auto;
+    }
+
+
+	.navigation li {
+		display: flex;
+        margin-right: 1.5rem;
+	}
+
+
+	.navigation a {
+		display: block;
+	    padding: .75rem;
+	    text-align: center;
+	    text-decoration: none;
+	    color: black;
+	    font-weight: 700;
+	    transition: 0.5s;
+	    font-size: clamp(1.2rem, 2vmin, 1.5rem);
+        
+	}
+
+    h2 {
+        text-align: center;
+        padding: .75rem;
+    }
+    
+    main > img {
+        max-width: 10%;
+        height: auto;
+    }
+
+	#menu {
+		display: none;
+	}
+}

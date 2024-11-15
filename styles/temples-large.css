@@ -11,7 +11,7 @@ In most WDD courses there is a requirement to use a separate file. This part wou
 
     nav {
         display: flex;
-        background-color: rgb(255, 123, 100);
+        background-color: rgb(235, 113, 91);
     }
     
 
@@ -48,6 +48,7 @@ In most WDD courses there is a requirement to use a separate file. This part wou
     h2 {
         text-align: center;
         padding: .75rem;
+        color: ghostwhite;
     }
     
     main > img {

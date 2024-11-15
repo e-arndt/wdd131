@@ -1,4 +1,9 @@
 * {
+    --primary-color: rgb(235, 113, 91);
+    --secondary-color: ghostwhite;
+
+    --primary-background: black;
+
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -16,7 +21,7 @@ h1 {
 
 body {
 	font-family: Roboto, sans-serif;
-    background-color: ghostwhite;
+    background-color: black;
 }
 
 
@@ -30,7 +35,7 @@ body {
 	font-weight:700;
 	text-decoration: none;
 	padding: .5rem .75rem;
-	background-color: rgb(255, 123, 100);
+	background-color: rgb(235, 113, 91);
 	color: black;
     border: 2px solid black;
     border-radius: 15px;
@@ -44,6 +49,7 @@ body {
 
 .active::before {
 	content: "▶";
+    color: ghostwhite;
 }
 
 
@@ -55,7 +61,7 @@ body {
 nav {
     display: flex;
     
-	background-color: rgb(255, 123, 100);
+	background-color: rgb(235, 113, 91);
     
     /* max-width: 100%; */
     flex: 1 1 auto;
@@ -117,6 +123,7 @@ figure {
 figcaption {
     font-size: 0.85rem;
     text-align: center;
+    color: ghostwhite;
 }
 
 
@@ -130,7 +137,7 @@ main {
     align-items: center;
     justify-content: center;
     max-width: auto;
-    
+    padding-bottom: 1rem;
 }
 
 
@@ -151,6 +158,13 @@ main > img {
     grid-gap: 5px;
     align-items: center;
     justify-content: center;
+    padding-bottom: 1rem;
+    }
+
+    h2 {
+        text-align: center;
+        padding: .75rem;
+        color: ghostwhite;
     }
 
 }
@@ -166,6 +180,7 @@ main > img {
     grid-gap: 5px;
     align-items: center;
     justify-content: center;
+    padding-bottom: 1rem;
     }
 
 }
@@ -181,6 +196,17 @@ main > img {
         grid-gap: 5px;
         align-items: center;
         justify-content: center;
+        padding-bottom: 1rem;
         }
 
+}
+
+
+footer {
+    background-color: rgb(235, 113, 91);
+    color: black;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0.9em;
+    max-width: 100%;
 }

@@ -136,7 +136,7 @@ main {
     grid-gap: 5px;
     align-items: center;
     justify-content: center;
-    max-width: auto;
+    max-width: 100%;
     padding-bottom: 1rem;
 }
 

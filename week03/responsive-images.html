@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images</title>
+    <link href="styles/responsive-images.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 1800px)" srcset="images/luau-dancers-1920x960.jpg" width="1920" height="960">
+                <source media="(min-width: 1600px)" srcset="images/luau-dancers-1600x800.jpg" width="1600" height="800">
+                <source media="(min-width: 1200px)" srcset="images/luau-dancers-1200x600.jpg" width="1200" height="600">
+                <source media="(min-width: 960px)" srcset="images/luau-dancers-960x480.jpg" width="960" height="480">
+                <source media="(min-width: 600px)" srcset="images/luau-dancers-600x300.jpg" width="600" height="300">
+                <img src="images/luau-dancers-400x480.jpg" alt="Hawaiian Luau Dancer" width="400" height="480">
+            </picture>
+        </div>
+    </main>
+    
+</body>
+</html>

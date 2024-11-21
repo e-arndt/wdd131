@@ -1,0 +1,199 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    text-align: center;
+    font-size: 1.65rem;
+    border-bottom: 25px solid rgba(255, 53, 188, 1);
+    background-color: #c7240b;
+    color: ghostwhite;
+}
+
+
+h1 {
+    margin-top: -8px;
+    padding-top: .7rem;
+}
+
+
+
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+section {
+    box-shadow: 10px 10px 30px rgb(97, 97, 97);
+}
+
+.wxicon::after {
+    content: url("images/day_partial_cloud.svg");
+}
+
+.data {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    background-color: rgba(248,248,255, 0.85);
+    
+}
+
+.wx {
+    position: absolute;
+    max-width: 450px;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    background-color: rgba(248,248,255, 0.85);
+    
+}
+
+h2 {
+    color: ghostwhite;
+    background-color: rgba(255, 53, 188, 0.85);
+    max-width: 350px;
+    margin: 15px 0 0 -15px;
+    padding: 1.25rem;
+    
+}
+
+.stats {
+    min-width: 390px;
+}
+
+.stats b {
+    text-align: right;
+    display: inline-block;
+    width: 40%;
+    position: relative;
+    padding-right: 10px;
+    color: black;
+}
+
+.stats b::after {
+    content: ":";
+    position: absolute;
+    right: 2px;
+}
+
+.stats li {
+    list-style-type: none;
+    color: black;
+    padding: .5rem 3rem .5rem .2rem;
+    font-size: 1.1rem;
+}
+
+
+.weather {
+    min-width: 375px;
+}
+
+
+.weather b {
+    text-align: right;
+    display: inline-block;
+    width: 40%;
+    position: relative;
+    padding-right: 10px;
+    color: black;
+}
+
+.weather b::after {
+    content: ":";
+    position: absolute;
+    right: 2px;
+}
+
+.weather li {
+    list-style-type: none;
+    color: black;
+    padding: .5rem 3rem .5rem .2rem;
+    font-size: 1.1rem;
+}
+
+
+
+/* .area::after {
+    content: "6,423 sq mi ";
+    font-weight: normal;
+    font-size: 1.1rem;
+}
+
+.pop::after {
+    content: "1,430,880 ";
+    font-weight: normal;
+    font-size: 1.1rem;
+    
+}
+
+.cap::after {
+    content: "Honolulu ";
+    font-weight: normal;
+    font-size: 1.1rem;
+}
+
+.lang::after {
+    content: "6,423 sq mi ";
+    font-weight: normal;
+    font-size: 1.1rem;
+}
+
+.curr::after {
+    content: "6,423 sq mi ";
+    font-weight: normal;
+}
+
+.time::after {
+    content: "6,423 sq mi ";
+    font-weight: normal;
+    font-size: 1.1rem;
+}
+
+.call::after {
+    content: "6,423 sq mi ";
+    font-weight: normal;
+    font-size: 1.1rem;
+}
+
+.tld::after {
+    content: "6,423 sq mi ";
+    font-weight: normal;
+    font-size: 1.1rem;
+} */
+
+
+footer {
+    max-width: 1887px;
+    background-color: #c7240b;
+    padding: .5rem;
+    margin-top: -5px;
+}
+
+
+footer p {
+    color: ghostwhite;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+
+
+@media screen and (min-width: 700px) {
+
+    header {
+        background-color: #c7240b;
+        color: ghostwhite;
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}

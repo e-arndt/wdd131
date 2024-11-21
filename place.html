@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Eric Arndt - Place Assignment ">
+    <meta name="author" content="Eric Arndt">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Roboto&family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="styles/place.css" rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>🌺 Hawaii 🌺</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 1800px)" srcset="images/luau-dancers-1920x960.webp" width="1887" height="960">
+                <source media="(min-width: 1400px)" srcset="images/luau-dancers-1600x800.webp" width="1600" height="800">
+                <source media="(min-width: 1100px)" srcset="images/luau-dancers-1200x600.webp" width="1200" height="600">
+                <source media="(min-width: 950px)" srcset="images/luau-dancers-960x480.webp" width="960" height="480">
+                <!-- <source media="(min-width: 700px)" srcset="images/luau-dancers-960x480.webp" width="750" height="375">
+                <source media="(min-width: 600px)" srcset="images/luau-dancers-600x300.webp" width="600" height="300"> -->
+                <img src="images/luau-dancers-480x900.webp" alt="Hawaiian Luau Dancer" width="467" height="900";> <!--width="465" height="900"  style="width: auto;"-->
+            </picture>
+            <section class="data">
+                <h2>Data</h2>
+                <ul class="stats">
+                    <li><b>Area</b> 6,423 sq mi</li>
+                    <li><b>Population</b> 1,430,880</li>
+                    <li><b>Capital</b> Honolulu</li>
+                    <li><b>Languages</b> English, Hawaiian</li>
+                    <li><b>Currency</b> U.S Dollar (USD)</li>
+                    <li><b>Time Zone</b> UTC−10</li>
+                    <li><b>Calling Code</b> +1</li>
+                    <li><b>Area Code</b> 808</li>
+                    <li><b>Internet TLD</b> .hawaii</li>
+                </ul>
+            </section>
+            <section class="wx">
+                <h2 class="wxicon">Weather</h2>
+                <ul class="weather">
+                    <li><b>Temperature</b> <span id="temp"></span></li>
+                    <li><b>Conditions</b> Partly Cloudy</li>
+                    <li><b>Wind</b> <span id="wind"></span></li>
+                    <li><b>Wind Chill</b> <span id="chill"></span></li>
+                </ul>
+            </section>
+        </div>
+        
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> 🌲 Eric Earl Arndt 🌲 Washington, USA</p>
+        <p> Last Modified on: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
+
+
+<!-- <div class="stats">
+    <p class="area">Area: </p> 
+    <p class="pop">Population: </p>
+    <p class="cap">Capital: </p>
+    <p class="lang">Languages: </p>
+    <p class="curr">Currency: </p>
+    <p class="time">Time Zone: </p>
+    <p class="call">Calling Code: </p>
+    <p class="tld">Internet TLD: </p>
+</div> -->

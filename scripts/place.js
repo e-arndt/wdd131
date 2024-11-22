@@ -13,11 +13,11 @@ yearSpan.innerText = currentDate.getFullYear();
 
 
 
-const calcWindChill = function(T,V) {
+const calculateWindChill = function(T,V) {
     return 35.74 + (0.6215*T) - (35.75*(Math.pow(V,0.16))) + (0.4275*T)*(Math.pow(V,0.16));
 }
 
-const windChill = calcWindChill(temperature,wind);
+const windChill = calculateWindChill(temperature,wind);
 
 if (temperature <= 50 && wind > 3) {
     document.getElementById("temp").innerHTML = temperature + "°F";

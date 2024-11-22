@@ -122,7 +122,7 @@ footer p {
 
 
 
-@media screen and (min-width: 749px) {
+@media screen and (min-width: 900px) {
 
     header {
         background-color: var(--lehua-flower-red);

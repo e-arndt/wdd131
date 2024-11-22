@@ -1,13 +1,24 @@
+:root {
+    --hibiscus-pink: rgba(255, 53, 188, 1);
+    --lehua-flower-red: rgba(199, 36, 11, 1);
+    --transparent-white: rgba(248,248,255, 0.85);
+    --shadow-box-grey: rgb(85, 84, 84);
+    --black-font: black;
+    --white-font: ghostwhite;
+    --main-font: 'Roboto', sans-serif;
+}
+
+
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--main-font);
 }
 
 header {
     text-align: center;
     font-size: 1.65rem;
-    border-bottom: 25px solid rgba(255, 53, 188, 1);
-    background-color: #c7240b;
-    color: ghostwhite;
+    border-bottom: 25px solid var(--hibiscus-pink);
+    background-color: var(--lehua-flower-red);
+    color: var(--white-font);
 }
 
 
@@ -44,7 +55,7 @@ h2 {
     width: 50%;
     position: relative;
     padding-right: 10px;
-    color: black;
+    color: var(--black-font);
 }
 
 .stats b::after {
@@ -55,7 +66,7 @@ h2 {
 
 .stats li {
     list-style-type: none;
-    color: black;
+    color: var(--black-font);
     padding: .5rem 3rem .5rem .2rem;
     font-size: 1.1rem;
     white-space: nowrap;
@@ -73,7 +84,7 @@ h2 {
     width: 40%;
     position: relative;
     padding-right: 10px;
-    color: black;
+    color: var(--black-font);
 }
 
 .weather b::after {
@@ -84,7 +95,7 @@ h2 {
 
 .weather li {
     list-style-type: none;
-    color: black;
+    color: var(--black-font);
     padding: .5rem 3rem .5rem .2rem;
     font-size: 1.1rem;
     
@@ -97,14 +108,14 @@ h2 {
 
 footer {
     max-width: 1887px;
-    background-color: #c7240b;
+    background-color: var(--lehua-flower-red);
     padding: .5rem;
     margin-top: -5px;
 }
 
 
 footer p {
-    color: ghostwhite;
+    color: var(--white-font);
     font-size: 1.2rem;
     text-align: center;
 }
@@ -114,8 +125,8 @@ footer p {
 @media screen and (min-width: 749px) {
 
     header {
-        background-color: #c7240b;
-        color: ghostwhite;
+        background-color: var(--lehua-flower-red);
+        color: var(--white-font);
     }
 
     main {
@@ -123,7 +134,7 @@ footer p {
     }
 
     section {
-        box-shadow: 15px 15px 27px rgb(85, 84, 84);
+        box-shadow: 15px 15px 27px var(--shadow-box-grey);
     }
 
     .wxImage {
@@ -144,7 +155,7 @@ footer p {
         position: absolute;
         top: 10rem;
         left: 1.5rem;
-        background-color: rgba(248,248,255, 0.85);
+        background-color: var(--transparent-white);
         
     }
     
@@ -153,13 +164,13 @@ footer p {
         max-width: 450px;
         bottom: 1.5rem;
         right: 1.5rem;
-        background-color: rgba(248,248,255, 0.85);
+        background-color: var(--transparent-white);
         
     }
     
     h2 {
-        color: ghostwhite;
-        background-color: rgba(255, 53, 188, 0.85);
+        color: var(--white-font);
+        background-color: var(--hibiscus-pink);
         max-width: 350px;
         margin: 15px 0 0 -15px;
         padding: 1.25rem;

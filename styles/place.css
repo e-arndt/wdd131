@@ -126,55 +126,6 @@ h2 {
 
 
 
-/* .area::after {
-    content: "6,423 sq mi ";
-    font-weight: normal;
-    font-size: 1.1rem;
-}
-
-.pop::after {
-    content: "1,430,880 ";
-    font-weight: normal;
-    font-size: 1.1rem;
-    
-}
-
-.cap::after {
-    content: "Honolulu ";
-    font-weight: normal;
-    font-size: 1.1rem;
-}
-
-.lang::after {
-    content: "6,423 sq mi ";
-    font-weight: normal;
-    font-size: 1.1rem;
-}
-
-.curr::after {
-    content: "6,423 sq mi ";
-    font-weight: normal;
-}
-
-.time::after {
-    content: "6,423 sq mi ";
-    font-weight: normal;
-    font-size: 1.1rem;
-}
-
-.call::after {
-    content: "6,423 sq mi ";
-    font-weight: normal;
-    font-size: 1.1rem;
-}
-
-.tld::after {
-    content: "6,423 sq mi ";
-    font-weight: normal;
-    font-size: 1.1rem;
-} */
-
-
 footer {
     max-width: 1887px;
     background-color: #c7240b;
@@ -191,7 +142,7 @@ footer p {
 
 
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 949px) {
 
     header {
         background-color: #c7240b;

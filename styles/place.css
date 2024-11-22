@@ -31,11 +31,17 @@ main {
 }
 
 section {
-    box-shadow: 10px 10px 30px rgb(97, 97, 97);
+    box-shadow: 15px 15px 27px rgb(85, 84, 84);
 }
 
 .wxicon::after {
-    content: url("images/day_partial_cloud.svg");
+    content: "⛅";
+    margin-left: 45px;
+    font-size: 2.25rem;
+}
+
+h2.wxicon {
+    font-size: 2rem;
 }
 
 .data {
@@ -61,7 +67,7 @@ h2 {
     max-width: 350px;
     margin: 15px 0 0 -15px;
     padding: 1.25rem;
-    
+    font-size: 2rem;
 }
 
 .stats {

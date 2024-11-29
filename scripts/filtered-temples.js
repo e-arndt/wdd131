@@ -142,11 +142,20 @@ const temples = [
   ];
 
 
-buildDataCard();
+buildDataCard(temples);
+
+const oldTemplesLink = document.querySelector("#oldTemples");
 
 
-function buildDataCard() {
-	temples.forEach(temple => {
+
+
+oldTemplesLink.addEventListener("click", () => {
+	buildDataCard(temples.filter(temple => temple.area < 45000));
+});
+
+
+function buildDataCard(filtered) {
+	filtered.forEach(temple => {
 		let card = document.createElement("section");
 		let name = document.createElement("h3");
 		let location = document.createElement("p");
@@ -162,7 +171,7 @@ function buildDataCard() {
 		pic.setAttribute("alt", `${temple.templeName} Temple Picture`);
 		pic.setAttribute("loading", "lazy");
 		pic.setAttribute("width", "330");
-		// pic.setAttribute("height", "300");
+
 
 		card.appendChild(pic);
 		card.appendChild(name);

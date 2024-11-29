@@ -123,15 +123,11 @@ section {
     margin: 0 auto;
     border: 2px solid rgb(235, 113, 91);
     padding: 1px;
-    box-shadow: 0px 0px 5px 6px rgb(170, 69, 52)
+    box-shadow: 0px 0px 5px 6px rgb(157, 47, 28);
+    background-color: rgb(56, 56, 56);
 }
 
 
-figcaption {
-    font-size: 0.85rem;
-    text-align: center;
-    color: ghostwhite;
-}
 
 
 .pic-grid {
@@ -153,8 +149,8 @@ img {
 }
 
 .label {
-    color: ghostwhite;
-    font-weight: bold;
+    color: rgb(249, 133, 112);
+    font-size: 1rem;
 }
 
 p {
@@ -231,6 +227,11 @@ footer {
     color: black;
     margin: 0 auto;
     text-align: center;
-    font-size: 0.9em;
     max-width: 100%;
+    padding-bottom: 25px;
+}
+
+footer p {
+    color: black;
+    font-size: 1em;
 }

@@ -135,7 +135,7 @@ section {
     display: grid;
     margin-top: 10px;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 400px);
+    grid-template-rows: repeat(1, 400px);
     grid-gap: 5px;
     align-items: center;
     justify-content: center;
@@ -161,12 +161,12 @@ p {
 
 
 
-@media only screen and (max-width: 1675px) {
+@media only screen and (max-width: 1700px) {
 
     .pic-grid{
     display: grid;
     margin-top: 10px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 400px);
     grid-gap: 5px;
     align-items: center;
@@ -183,12 +183,12 @@ p {
 }
 
 
-@media only screen and (max-width: 1025px) {
+@media only screen and (max-width: 1400px) {
 
     .pic-grid{
     display: grid;
     margin-top: 10px;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, 400px);
     grid-gap: 5px;
     align-items: center;
@@ -199,7 +199,23 @@ p {
 }
 
 
-@media only screen and (max-width:670px) {
+@media only screen and (max-width:1050px) {
+
+    .pic-grid{
+        display: grid;
+        margin-top: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 400px);
+        grid-gap: 5px;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 1rem;
+        }
+
+}
+
+
+@media only screen and (max-width:700px) {
 
     .pic-grid{
         display: grid;

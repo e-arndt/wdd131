@@ -1,8 +1,11 @@
 * {
     --primary-color: rgb(235, 113, 91);
-    --secondary-color: ghostwhite;
-
+    --accent-color: rgb(157, 47, 28);
+    --text-color-light: ghostwhite;
+    --text-color-dark: black;
     --primary-background: black;
+    --info-card-background: rgb(56, 56, 56);
+    --info-card-text: rgb(249, 133, 112);
 
 	margin: 0;
 	padding: 0;
@@ -21,7 +24,7 @@ h1 {
 
 body {
 	font-family: Roboto, sans-serif;
-    background-color: black;
+    background-color: var(--primary-background);
 }
 
 
@@ -35,7 +38,7 @@ body {
 	font-weight:700;
 	text-decoration: none;
 	padding: .5rem .75rem;
-	background-color: rgb(235, 113, 91);
+	background-color: var(--primary-color);
 	color: black;
     border: 2px solid black;
     border-radius: 15px;
@@ -49,7 +52,7 @@ body {
 
 .active::before {
 	content: "▶";
-    color: ghostwhite;
+    color: var(--text-color-light);
 }
 
 
@@ -60,10 +63,7 @@ body {
 
 nav {
     display: flex;
-    
-	background-color: rgb(235, 113, 91);
-    
-    /* max-width: 100%; */
+	background-color: var(--primary-color);
     flex: 1 1 auto;
 }
 
@@ -90,7 +90,7 @@ nav {
 	padding: .75rem;
 	text-align: center;
 	text-decoration: none;
-	color: black;
+	color: var(--text-color-dark);
 	font-weight: 700;
 	transition: 0.5s;
 	font-size: clamp(1.25rem, 2vmin, 1.5rem);
@@ -98,8 +98,8 @@ nav {
 
 
 .navigation a:hover, navigation a:active {
-	color: white;
-	background-color: black;
+	color: var(--text-color-light);
+	background-color: var(--primary-background);
 }
 
 
@@ -116,15 +116,15 @@ nav {
 
 h3 {
     text-align: center;
-    color: ghostwhite;
+    color: var(--text-color-light);
 }
 
 section {
     margin: 0 auto;
-    border: 2px solid rgb(235, 113, 91);
+    border: 2px solid var(--primary-color);
     padding: 1px;
-    box-shadow: 0px 0px 5px 6px rgb(157, 47, 28);
-    background-color: rgb(56, 56, 56);
+    box-shadow: 0px 0px 5px 6px var(--accent-color);
+    background-color: var(--info-card-background);
 }
 
 
@@ -149,23 +149,16 @@ img {
 }
 
 .label {
-    color: rgb(249, 133, 112);
+    color: var(--info-card-text);
     font-size: 1rem;
 }
 
 p {
     font-size: 0.85rem;
     margin: 5px 0 2px 5px;
-
-    color: ghostwhite;
+    color: var(--text-color-light);
 }
 
-
-/* .pic-grid > img {
-    max-width: auto;
-    height: 100%;
-    
-} */
 
 
 @media only screen and (max-width: 1675px) {
@@ -184,7 +177,7 @@ p {
     h2 {
         text-align: center;
         padding: .75rem;
-        color: ghostwhite;
+        color: var(--text-color-light);
     }
 
 }
@@ -223,8 +216,8 @@ p {
 
 
 footer {
-    background-color: rgb(235, 113, 91);
-    color: black;
+    background-color: var(--primary-color);
+    color: var(--text-color-dark);
     margin: 0 auto;
     text-align: center;
     max-width: 100%;
@@ -232,6 +225,6 @@ footer {
 }
 
 footer p {
-    color: black;
+    color: var(--text-color-dark);
     font-size: 1em;
 }

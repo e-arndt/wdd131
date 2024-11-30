@@ -142,7 +142,9 @@ const temples = [
   ];
 
 
+
 buildDataCard(temples);
+
 
 const homeLink = document.querySelector("#home");
 const oldTemplesLink = document.querySelector("#oldTemples");

@@ -117,7 +117,7 @@ const temples = [
 	  {
 		templeName: "Oakland California",
 		location: "Oakland, California, USA",
-		dedicated: "19 November, 1964",
+		dedicated: "1964, November, 19",
 		area: 80157,
 		imageUrl:
 		"https://churchofjesuschristtemples.org/assets/img/temples/oakland-california-temple/oakland-california-temple-5006.jpg"
@@ -125,7 +125,7 @@ const temples = [
 	  {
 		templeName: "San Diego California",
 		location: "San Diego, California, USA",
-		dedicated: "30 April, 1993",
+		dedicated: "1993, April, 30",
 		area: 72000,
 		imageUrl:
 		"https://churchofjesuschristtemples.org/assets/img/temples/san-diego-california-temple/san-diego-california-temple-9060-main.jpg"
@@ -144,17 +144,60 @@ const temples = [
 
 buildDataCard(temples);
 
+const homeLink = document.querySelector("#home");
 const oldTemplesLink = document.querySelector("#oldTemples");
+const newTemplesLink = document.querySelector("#newTemples");
+const largeTemplesLink = document.querySelector("#largeTemples");
+const smallTemplesLink = document.querySelector("#smallTemples");
 
 
 
+homeLink.addEventListener("click", () => {
+	buildDataCard(temples);
+	document.querySelector("header > h2").innerHTML = "Home";
+	removeActive();
+	homeLink.setAttribute("class", "active");
+});
 
 oldTemplesLink.addEventListener("click", () => {
-	buildDataCard(temples.filter(temple => temple.area < 45000));
+	buildDataCard(temples.filter((temple) => parseInt(temple.dedicated.substring(0,4)) < 1900));
+	document.querySelector("header > h2").innerHTML = "Temples Built Before 1900";
+	removeActive();
+	oldTemplesLink.setAttribute("class", "active");
 });
+
+newTemplesLink.addEventListener("click", () => {
+	buildDataCard(temples.filter((temple) => parseInt(temple.dedicated.substring(0,4)) > 2000));
+	document.querySelector("header > h2").innerHTML = "Temples Built After 2000";
+	removeActive();
+	newTemplesLink.setAttribute("class", "active");
+});
+
+largeTemplesLink.addEventListener("click", () => {
+	buildDataCard(temples.filter(temple => temple.area > 90000));
+	document.querySelector("header > h2").innerHTML = "Temples over 90,000 sq ft";
+	removeActive();
+	largeTemplesLink.setAttribute("class", "active");
+});
+
+smallTemplesLink.addEventListener("click", () => {
+	buildDataCard(temples.filter(temple => temple.area < 10000));
+	document.querySelector("header > h2").innerHTML = "Temples under 10,000 sq ft";
+	removeActive();
+	smallTemplesLink.setAttribute("class", "active");
+});
+
+function removeActive() {
+	homeLink.removeAttribute("class");
+	oldTemplesLink.removeAttribute("class");
+	newTemplesLink.removeAttribute("class");
+	largeTemplesLink.removeAttribute("class");
+	smallTemplesLink.removeAttribute("class");
+}
 
 
 function buildDataCard(filtered) {
+	document.querySelector(".pic-grid").innerHTML = "";
 	filtered.forEach(temple => {
 		let card = document.createElement("section");
 		let name = document.createElement("h3");

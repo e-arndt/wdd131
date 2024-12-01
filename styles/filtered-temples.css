@@ -51,7 +51,7 @@ body {
 
 
 .active::before {
-	content: "▶";
+	content: "▶ ";
     color: var(--text-color-light);
 }
 

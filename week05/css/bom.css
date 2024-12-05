@@ -10,19 +10,27 @@ body {
 	align-items: center;
 	justify-content: center;
 	font-family: 'Acme', Arial, sans-serif;
+	background-image: url("../images/2011_Bible-Scriptures.webp");
+	background-repeat: no-repeat;
+	background-position: center center;
+  	background-color: #000000;
+	background-size: cover;
 }
 
 h1 {
 	font-size: 1.5rem;
+	color: ghostwhite;
+	text-shadow: 3px 3px black;
 }
 
 main {
 	margin: 1rem auto;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	padding: 1rem;
-	background-color: #ddd;
+	background-color: #9f9f9f;
 	display: flex;
 	flex-direction: column;
+	box-shadow: 3px 3px 13px rgb(57, 57, 57);
 }
 
 input,

@@ -19,19 +19,19 @@
         <h1>Product Review</h1>
             <form method="get" action="review.html" class="wf1">
                 <fieldset class="fs1">
-                    <label name="plabel">Product Name* 
+                    <label>Product Name* 
                         <select name="product" id="pselect" required>
                             <option value="">Select a Product </option>
                         </select>
                     </label>
-                
-                    <label name="olabel">Overall Rating*</label>
-                    <label name="radio" for="rate1">&star;<br /><input type="radio" id="rate1" name="rating" value="1" required></label>
-                    <label name="radio" for="rate2">&star;&star;<br /><input type="radio" id="rate2" name="rating" value="2" required></label>
-                    <label name="radio" for="rate3">&star;&star;&star;<br /><input type="radio" id="rate3" name="rating" value="3" required></label>
-                    <label name="radio" for="rate4">&star;&star;&star;&star;<br /><input type="radio" id="rate4" name="rating" value="4" required></label>
-                    <label name="radio" for="rate5">&star;&star;&star;&star;&star;<br /><input type="radio" id="rate5" name="rating" value="5" required></label>
-                    
+                    <div class="ratebtn">
+                        <label id="olabel">Overall Rating*</label>
+                        <label class="radio" for="rate1">&star;<br><input type="radio" id="rate1" name="rating" value="1" required></label>
+                        <label class="radio" for="rate2">&star;&star;<br><input type="radio" id="rate2" name="rating" value="2" required></label>
+                        <label class="radio" for="rate3">&star;&star;&star;<br><input type="radio" id="rate3" name="rating" value="3" required></label>
+                        <label class="radio" for="rate4">&star;&star;&star;&star;<br><input type="radio" id="rate4" name="rating" value="4" required></label>
+                        <label class="radio" for="rate5">&star;&star;&star;&star;&star;<br><input type="radio" id="rate5" name="rating" value="5" required></label>
+                    </div>
                 </fieldset>
     
                 <fieldset class="fs2">
@@ -39,7 +39,7 @@
                         <input type="date" id="idate" name="install" required>
                         <div class="features">
                             <label>Which features did you find useful in the product?</label>
-                            <label name="flabel">(Check all that apply)</label>
+                            <label class="flabel">(Check all that apply)</label>
                             <label><input type="checkbox" name="durability" value="yes" id="check1"> Durability</label>
                             <label><input type="checkbox" name="ease" value="yes" id="check2"> Ease of Use</label>
                             <label><input type="checkbox" name="performance" value="yes" id="check3"> Performance</label>
@@ -56,22 +56,6 @@
                         <div class="submit">
                             <input type="submit" value="Post My Review">
                         </div>
-
-                    <!-- <label>Course Subject
-                        <select name="subject">
-                            <option value="">Please Select &#9662;</option>
-                        <option value="software">Software Development</option>
-                        <option value="creative">Creative Professional</option>
-                        <option value="info">Information Technology</option>
-                        <option value="data">Data Professional</option>
-                        <option value="construction">Construction</option>
-                        <option value="manufacturing">Manufacturingt</option>
-                        <option value="business">Business Professionalt</option>
-                        <option value="security">Cyber Security</option>
-                        </select>
-                    </label> -->
-    
-                    
     
                 </fieldset>
 

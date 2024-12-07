@@ -1,26 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="../styles/form.css" rel="stylesheet">
+    <link href="/styles/form.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Acme&family=Varela+Round&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book of Mormon Favorite Chapters</title>
+    <title>Product Review</title>
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Eric Arndt - Interactive Form Page ">
     <meta name="author" content="Eric Arndt">
-    <script src="../scripts/form.js" defer></script>
+    <script src="/scripts/form.js" defer></script>
 </head>
 <body>
-    <h1>Book of Mormon - Top 10</h1>
-<main>
-	<label for="favchap">Enter Book and Chapter: </label>
-	<input type="text" id="favchap" placeholder="Alma 5">
-	<button type="submit">Add Chapter</button>
-	<ul id="list"></ul>
-</main>
+   
+    <main>
+        <h1>Product Review</h1>
+            <form method="get" action="review.html" class="wf1">
+                <fieldset class="fs1">
+                    <label name="plabel">Product Name* 
+                        <select name="product" id="pselect" required>
+                            <option value="">Select a Product </option>
+                        </select>
+                    </label>
+                
+                    <label name="olabel">Overall Rating*</label>
+                    <label name="radio" for="rate1">&star;<br /><input type="radio" id="rate1" name="rating" value="1" required></label>
+                    <label name="radio" for="rate2">&star;&star;<br /><input type="radio" id="rate2" name="rating" value="2" required></label>
+                    <label name="radio" for="rate3">&star;&star;&star;<br /><input type="radio" id="rate3" name="rating" value="3" required></label>
+                    <label name="radio" for="rate4">&star;&star;&star;&star;<br /><input type="radio" id="rate4" name="rating" value="4" required></label>
+                    <label name="radio" for="rate5">&star;&star;&star;&star;&star;<br /><input type="radio" id="rate5" name="rating" value="5" required></label>
+                    
+                </fieldset>
     
-</body>
-</html>
+                <fieldset class="fs2">
+                        <div class="idate">Date of Installation*</div>
+                        <input type="date" id="idate" name="install" required>
+                        <div class="features">
+                            <label>Which features did you find useful in the product?</label>
+                            <label name="flabel">(Check all that apply)</label>
+                            <label><input type="checkbox" name="durability" value="yes" id="check1"> Durability</label>
+                            <label><input type="checkbox" name="ease" value="yes" id="check2"> Ease of Use</label>
+                            <label><input type="checkbox" name="performance" value="yes" id="check3"> Performance</label>
+                            <label><input type="checkbox" name="design" value="yes" id="check4"> Design</label>
+                        </div>
+                </fieldset>
+    
+                <fieldset class="fs3">
+                        <label>Written Review<span class="blue-text"> (optional)</span></label>
+                        <textarea rows="6" cols="40" name="written" id="wreview" placeholder="Type review here"></textarea>
+                        <div class="user">
+                            <label> Your Name<span class="blue-text"> (optional)</span><input type="text" name="username" id="uname"></label>
+                        </div>
+                        <div class="submit">
+                            <input type="submit" value="Post My Review">
+                        </div>
+
+                    <!-- <label>Course Subject
+                        <select name="subject">
+                            <option value="">Please Select &#9662;</option>
+                        <option value="software">Software Development</option>
+                        <option value="creative">Creative Professional</option>
+                        <option value="info">Information Technology</option>
+                        <option value="data">Data Professional</option>
+                        <option value="construction">Construction</option>
+                        <option value="manufacturing">Manufacturingt</option>
+                        <option value="business">Business Professionalt</option>
+                        <option value="security">Cyber Security</option>
+                        </select>
+                    </label> -->
+    
+                    
+    
+                </fieldset>
+
+                <footer>
+                    <p>&copy; <span id="currentYear"></span> 🌲 Eric Earl Arndt 🌲 Washington, USA</p>
+                    <p> Last Modified on: <span id="lastModified"></span></p>
+                </footer>
+    
+            </form>
+    
+        </main>
+        
+    <!-- FOOTER HERE -->   
+    
+    </body>
+    </html>

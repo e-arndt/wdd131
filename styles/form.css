@@ -4,51 +4,170 @@
 }
 
 body {
-	height: 100vh;
+	height: 105vh;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	font-family: 'Acme', Arial, sans-serif;
-	background-image: url("../images/2011_Bible-Scriptures.webp");
+	background-color: #340b0b;
+	/* background-image: url("../images/2011_Bible-Scriptures.webp");
 	background-repeat: no-repeat;
 	background-position: center center;
   	background-color: #000000;
-	background-size: cover;
+	background-size: cover; */
 }
 
 h1 {
 	font-size: 1.5rem;
 	color: ghostwhite;
 	text-shadow: 3px 3px black;
+	margin-left: 8px;
 }
 
 main {
 	margin: 1rem auto;
 	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 7px;
 	padding: 1rem;
-	background-color: #9f9f9f;
+	background-color: #e89652;
 	display: flex;
 	flex-direction: column;
-	box-shadow: 3px 3px 13px rgb(57, 57, 57);
+	/* box-shadow: 2px 2px 9px rgb(226, 174, 101); */
+	width: 550px;
 }
 
-input,
-button {
+
+.fs1, .fs2, .fs3 {
+	border: 1px solid black;
+	border-radius: 7px;
+	padding: .5rem;
+	margin-bottom: 5px;
+}
+
+.idate {
+	padding-bottom: .25rem;
+}
+
+
+#pselect {
+	display: block;
 	padding: 0.5rem;
+	width: 95%;
+	margin: 5px auto;
+	margin-bottom: 35px;
+	border-radius: 7px;
 }
 
-button {
-	margin: 0.5rem;
+label[name="olabel"] {
+	display: block;
 }
 
-.delete {
-	width: fit-content;
+input[type="radio"] {
+	height: 25px;
+	width: 25px;
+	accent-color: green;
 }
 
-.input {
+label[name="radio"] {
+	float: left;
+	text-align: center;
+	margin-left: 33px;
+	font-size: 1.3rem;
+}
+
+
+
+.features {
 	display: flex;
-	gap: 1rem;
+	flex-direction: column;
+}
+
+.fs2 label[name="flabel"] {
+	padding-bottom: 15px;
+}
+
+
+.fs2 input[type="checkbox"] {
+	height: 20px;
+	width: 20px;
+	margin-left: 5px;
+	margin-bottom: 15px;
+}
+
+.features label {
+	padding-left: .5rem;
+	padding-bottom: 10px;
+}
+
+
+
+
+.fs2 input[type="date"] {
+	display: block;
+	padding: 0.5rem;
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	font-size: 1rem;
+	border-radius: 7px;
+}
+
+
+.info input[type="textarea"] {
+	display: block;
+	padding: 0.25rem;
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+
+#wreview {
+	display: block;
+	padding: 0.25rem;
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	font-size: .85rem;
+	border-radius: 7px;
+}
+
+
+.user input[type="text"] {
+	display: block;
+	padding: 0.5rem;
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	font-size: 1rem;
+	border-radius: 7px;
+}
+
+.submit input[type="submit"] {
+	display: block;
+	padding: 0.5rem;
+	width: 94.5%;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	font-size: 1.5rem;
+	background-color: rgb(238, 224, 73);
+	border-radius: 7px;
+}
+
+
+.wf1 input:required, select:required {
+	border-left: solid 10px red;
+}
+
+.wf1 input:required:valid, select:required:valid {
+	border-left: solid 10px green;
+}
+
+.blue-text {
+	color: rgb(22, 22, 159);
 }
 
 .list {
@@ -66,12 +185,41 @@ li {
 	justify-content: space-between;
 }
 
-@media only screen and (min-width: 32.5em) {
+
+footer {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	color: black;
+	padding: .3rem;
+	font-size: 1rem;
+}
+
+@media only screen and (max-width: 31em) {
 	h1 {
 		font-size: 2rem;
 	}
 
+	body {
+		height: 148vh;
+	}
+
 	main {
-		width: 320px;
+		width: 400px;
+	}
+
+	.overall {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.overall input[type="radio"] {
+		height: 18px;
+		width: 18px;
+		margin-bottom: 23px;
+	}
+
+	.overall label{
+		font-size: 1.3rem;
 	}
 }

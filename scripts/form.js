@@ -85,4 +85,3 @@ const products = [
       averagerating: 5.0
     }
   ];
-

@@ -1,0 +1,112 @@
+:root {
+    --primary-color: rgb(213, 125, 17);
+    --accent-color: rgb(157, 47, 28);
+    --text-color-light: ghostwhite;
+    --text-color-dark: black;
+    --primary-background: black;
+    --info-card-background: rgb(56, 56, 56);
+    --info-card-text: rgb(249, 133, 112);
+    --accent-color: rgb(230, 205, 12);
+
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+h1 {
+    display: block;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px 0 10px 20px;
+    color: var(--text-color-light);
+    background-color: var(--primary-color);
+}
+
+
+body {
+	font-family: Roboto;
+    background-color: var(--primary-background);
+    margin: 0 auto;
+}
+
+
+.site-name, .scenarios, .schema, .topog, .wire {
+    border: 2px solid var(--accent-color);
+    padding-left: 20px;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+.site-name, .scenarios, .schema, .topog {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    text-align: left;
+    color: var(--text-color-light);
+    margin-bottom: 10px;
+}
+
+.wire {
+    margin: 0 auto;
+    padding-bottom: .75rem;
+    padding-top: .3rem;
+    font-size: .5rem;
+    text-align: center;
+    color: var(--text-color-light);
+    margin-bottom: 10px;
+}
+
+a:link, a:visited {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: .9rem;
+  }
+  
+  a:hover, a:active {
+    background-color: red;
+  }
+
+
+
+
+.name, .scenario, .color, .top1, .top2, .wire {
+    font-size: 1.25rem;
+    color: var(--accent-color);
+}
+
+.site-name label, .schema label {
+    margin: 10px 0 10px 0;
+}
+
+.scenarios label, .topog label {
+    margin: 5px 0 5px 0;
+}
+
+.top1 {
+    font-family: 'Roboto';
+}
+
+.top2 {
+    font-family: 'Varela Round';
+}
+
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-color-dark);
+    margin: 0 auto;
+    text-align: center;
+    max-width: 100%;
+    padding: 5px;
+}
+
+footer p {
+    color: var(--text-color-dark);
+    font-size: 1em;
+}

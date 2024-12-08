@@ -73,20 +73,19 @@ a:link, a:visited {
   }
 
 
-
-
 .name, .scenario, .color, .top1, .top2, .wire {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     color: var(--accent-color);
 }
 
 .site-name label, .schema label {
-    margin: 10px 0 10px 0;
+    margin: 5px 0 5px 0;
 }
 
 .scenarios label, .topog label {
     margin: 5px 0 5px 0;
 }
+
 
 .top1 {
     font-family: 'Roboto';

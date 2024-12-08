@@ -1,3 +1,18 @@
+:root {
+    --main-bkgd-color: rgba(52, 11, 11, 1);
+    --card-bkgd-color: rgba(232, 150, 82, 1);
+    --radio-btn-color: green;
+    --submit-btn-color: rgb(238, 224, 73);
+	--required-input-color: red;
+	--valid-input-color: green;
+	--optional-input-color: rgb(22, 22, 159);
+    --black-font: black;
+    --white-font: ghostwhite;
+    --main-font: 'Acme', Arial, sans-serif;
+}
+
+
+
 * {
 	margin: 0;
 	padding: 0;
@@ -9,24 +24,24 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	font-family: 'Acme', Arial, sans-serif;
-	background-color: #340b0b;
+	font-family: var(--main-font);
+	background-color: var(--main-bkgd-color);
 	
 }
 
 h1 {
 	font-size: 1.5rem;
-	color: ghostwhite;
-	text-shadow: 3px 3px black;
+	color: var(--white-font);
+	text-shadow: 3px 3px var(--black-font);
 	margin-left: 8px;
 }
 
 main {
 	margin: 1rem auto;
-	border: 1px solid rgba(0, 0, 0, 0.1);
+	border: 1px solid var(--black-font);
 	border-radius: 7px;
 	padding: 1rem;
-	background-color: #e89652;
+	background-color: var(--card-bkgd-color);
 	display: flex;
 	flex-direction: column;
 	width: 550px;
@@ -34,7 +49,7 @@ main {
 
 
 .fs1, .fs2, .fs3 {
-	border: 1px solid black;
+	border: 1px solid var(--black-font);
 	border-radius: 7px;
 	padding: .5rem;
 	margin-bottom: 5px;
@@ -61,7 +76,7 @@ main {
 input[type="radio"] {
 	height: 25px;
 	width: 25px;
-	accent-color: green;
+	accent-color: var(--radio-btn-color);
 }
 
 .radio {
@@ -146,21 +161,21 @@ input[type="radio"] {
 	margin: 0 auto;
 	margin-bottom: 10px;
 	font-size: 1.5rem;
-	background-color: rgb(238, 224, 73);
+	background-color: var(--submit-btn-color);
 	border-radius: 7px;
 }
 
 
 .wf1 input:required, select:required {
-	border-left: solid 10px red;
+	border-left: solid 10px var(--required-input-color);
 }
 
 .wf1 input:required:valid, select:required:valid {
-	border-left: solid 10px green;
+	border-left: solid 10px var(--valid-input-color);
 }
 
 .blue-text {
-	color: rgb(22, 22, 159);
+	color: var(--optional-input-color);
 }
 
 
@@ -168,7 +183,7 @@ footer {
 	display: block;
 	margin: 0 auto;
 	text-align: center;
-	color: black;
+	color: var(--black-font);
 	padding: .3rem;
 	font-size: 1rem;
 }

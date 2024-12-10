@@ -1,0 +1,66 @@
+:root {
+    --primary-color: rgb(213, 125, 17);
+    --text-color-light: ghostwhite;
+    --text-color-dark: black;
+    --primary-background: black;
+    --info-card-background: rgb(56, 56, 56);
+    --info-card-text: rgb(230, 205, 12);
+    --accent-color: rgb(230, 205, 12);
+}
+
+
+@media only screen and (min-width: 890px) {
+	
+    .head-wrapper {
+        display: flex;
+    }
+    
+
+    nav {
+        display: flex;
+        background-color: var(--primary-color);
+    }
+    
+
+    .navigation {
+        list-style: none;
+	}
+
+
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+        flex: 1 1 auto;
+    }
+
+
+	.navigation li {
+		display: flex;
+        margin-right: 1.5rem;
+	}
+
+
+	.navigation a {
+		display: block;
+	    padding: .75rem;
+	    text-align: center;
+	    text-decoration: none;
+	    color: var(--text-color-light);
+	    font-weight: 700;
+	    transition: 0.5s;
+	    font-size: clamp(1.2rem, 2vmin, 1.5rem);
+        
+	}
+
+    h2 {
+        text-align: center;
+        padding: .75rem;
+        color: ghostwhite;
+        text-shadow: 3px 3px 12px var(--accent-color), -3px -3px 12px var(--accent-color);
+    }
+    
+
+	#menu {
+		display: none;
+	}
+}

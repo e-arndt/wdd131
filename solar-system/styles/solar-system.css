@@ -164,6 +164,84 @@ p {
     color: var(--text-color-light);
 }
 
+.welcome {
+  	background-color: #000000;
+    border: 2px solid var(--accent-color);
+    border-radius: 8px;
+    box-sizing: border-box;
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.banner h3 {
+    font-size: 2rem;
+    padding: 1rem 0 2rem 0;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem 1rem 2rem;
+}
+
+.intro p {
+    color: var(--accent-color);
+    text-shadow: 3px 3px 17px var(--primary-background), -3px -3px 17px var(--primary-background);
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    margin: 0 auto;
+}
+
+.makebold {
+    font-weight: bold;
+}
+
+main {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.entry {
+    display: grid;
+    grid-template-columns: 120px 130px;
+    row-gap: 30px;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.entry input[type="text"] {
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    max-width: 5.5rem;
+    padding: .2rem;
+    text-align: center;
+}
+
+.entry label {
+    color: var(--text-color-light);
+    font-size: 1.25rem;
+    padding-left: 3rem;
+}
+
+.entry button {
+    border: solid 1px var(--primary-color);
+    background: linear-gradient(var(--primary-color), var(--accent-color), var(--primary-color));
+    color: var(--text-color-dark);
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    max-width: 140px;
+    max-height: 50px;
+}
+
+.entry input:required {
+    border-bottom: solid 8px red;
+}
+
+.entry input:required:valid {
+    border-bottom: solid 8px green;
+}
 
 
 @media only screen and (max-width: 1775px) {

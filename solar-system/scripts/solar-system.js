@@ -63,6 +63,17 @@ const ssObjects = [
         imageUrl: "images/earth.webp"
     },
     {
+        name: "Earth's Moon",
+        class: "Planetary Satellite",
+        location: "238,900 miles from Earth",
+        circum: "6,783.5",
+        distance: "93,000,000",
+        temp: "-243.4 - 224.6",
+        moons: "0",
+        rings: "None",
+        imageUrl: "images/earthsmoon.webp"
+    },
+    {
         name: "Mars",
         class: "Terrestrial Planet",
         location: "4th from Sun",
@@ -96,6 +107,17 @@ const ssObjects = [
         imageUrl: "images/jupiter.webp"
     },
     {
+        name: "Io",
+        class: "Planetary Satellite",
+        location: "262,094 miles from Jupiter",
+        circum: "7,111.9",
+        distance: "483,682,810",
+        temp: "-262",
+        moons: "0",
+        rings: "None",
+        imageUrl: "images/io.webp"
+    },
+    {
         name: "Saturn",
         class: "Gas Giant Planet",
         location: "6th from Sun",
@@ -105,6 +127,17 @@ const ssObjects = [
         moons: "146",
         rings: "7 main",
         imageUrl: "images/saturn.webp"
+    },
+    {
+        name: "Titan",
+        class: "Planetary Satellite",
+        location: "759,231.7 miles from Saturn",
+        circum: "10,053.1",
+        distance: "890,800,000",
+        temp: "-290.2",
+        moons: "0",
+        rings: "None",
+        imageUrl: "images/titanmoon.webp"
     },
     {
         name: "Uranus",
@@ -129,50 +162,6 @@ const ssObjects = [
         imageUrl: "images/neptune.webp"
     },
     {
-        name: "Pluto",
-        class: "Dwarf Planet",
-        location: "Kuiper Belt",
-        circum: "4,639.38",
-        distance: "3,670,050,000",
-        temp: "-387",
-        moons: "5",
-        rings: "None",
-        imageUrl: "images/pluto.webp"
-    },
-    {
-        name: "Earth's Moon",
-        class: "Planetary Satellite",
-        location: "238,900 miles from Earth",
-        circum: "6,783.5",
-        distance: "93,000,000",
-        temp: "-243.4 - 224.6",
-        moons: "0",
-        rings: "None",
-        imageUrl: "images/earthsmoon.webp"
-    },
-    {
-        name: "Io",
-        class: "Planetary Satellite",
-        location: "262,094 miles from Jupiter",
-        circum: "7,111.9",
-        distance: "483,682,810",
-        temp: "-262",
-        moons: "0",
-        rings: "None",
-        imageUrl: "images/io.webp"
-    },
-    {
-        name: "Titan",
-        class: "Planetary Satellite",
-        location: "759,231.7 miles from Saturn",
-        circum: "10,053.1",
-        distance: "890,800,000",
-        temp: "-290.2",
-        moons: "0",
-        rings: "None",
-        imageUrl: "images/titanmoon.webp"
-    },
-    {
         name: "Triton",
         class: "Planetary Satellite",
         location: "220,500 miles from Neptune",
@@ -183,6 +172,18 @@ const ssObjects = [
         rings: "None",
         imageUrl: "images/tritonmoon.webp"
     },
+    {
+        name: "Pluto",
+        class: "Dwarf Planet",
+        location: "Kuiper Belt",
+        circum: "4,639.38",
+        distance: "3,670,050,000",
+        temp: "-387",
+        moons: "5",
+        rings: "None",
+        imageUrl: "images/pluto.webp"
+    },
+    
 	
 	// Add more temple objects here...
   ];

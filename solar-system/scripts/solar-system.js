@@ -14,11 +14,13 @@ const currentDate = new Date();
 const yearSpan = document.querySelector('#currentYear');
 
 yearSpan.innerText = currentDate.getFullYear();
-
+ const userWeight = "";
+ const num = "";
 
 
 const ssObjects = [
 	{
+        id: 1,
 	    name: "Sun",
         class: "G2 V Star",
 	    location: "Center of Solar System",
@@ -30,6 +32,7 @@ const ssObjects = [
 	    imageUrl: "images/sun.webp"
     },
 	{
+        id: 2,
 	    name: "Mercury",
         class: "Terrestrial Planet",
 	    location: "1st from Sun",
@@ -41,6 +44,7 @@ const ssObjects = [
 	    imageUrl: "images/mercury.webp"
 	},
     {
+        id: 3,
 	    name: "Venus",
         class: "Terrestrial Planet",
 	    location: "2st from Sun",
@@ -52,6 +56,7 @@ const ssObjects = [
 	    imageUrl: "images/venus.webp"
 	},
 	{
+        id: 4,
         name: "Earth",
         class: "Terrestrial Planet",
         location: "3rd from Sun",
@@ -63,7 +68,8 @@ const ssObjects = [
         imageUrl: "images/earth.webp"
     },
     {
-        name: "Earth's Moon",
+        id: 5,
+        name: "Moon",
         class: "Planetary Satellite",
         location: "238,900 miles from Earth",
         circum: "6,783.5",
@@ -74,6 +80,7 @@ const ssObjects = [
         imageUrl: "images/earthsmoon.webp"
     },
     {
+        id: 6,
         name: "Mars",
         class: "Terrestrial Planet",
         location: "4th from Sun",
@@ -85,6 +92,7 @@ const ssObjects = [
         imageUrl: "images/mars.webp"
     },
 	{
+        id: 7,
         name: "Ceres",
         class: "Dwarf Planet",
         location: "Main Asteroid Belt",
@@ -96,6 +104,7 @@ const ssObjects = [
         imageUrl: "images/ceres.webp"
     },
 	{
+        id: 8,
         name: "Jupiter",
         class: "Gas Giant Planet",
         location: "5th from Sun",
@@ -107,6 +116,7 @@ const ssObjects = [
         imageUrl: "images/jupiter.webp"
     },
     {
+        id: 9,
         name: "Io",
         class: "Planetary Satellite",
         location: "262,094 miles from Jupiter",
@@ -118,6 +128,7 @@ const ssObjects = [
         imageUrl: "images/io.webp"
     },
     {
+        id: 10,
         name: "Saturn",
         class: "Gas Giant Planet",
         location: "6th from Sun",
@@ -129,6 +140,7 @@ const ssObjects = [
         imageUrl: "images/saturn.webp"
     },
     {
+        id: 11,
         name: "Titan",
         class: "Planetary Satellite",
         location: "759,231.7 miles from Saturn",
@@ -140,6 +152,7 @@ const ssObjects = [
         imageUrl: "images/titanmoon.webp"
     },
     {
+        id: 12,
         name: "Uranus",
         class: "Ice Giant Planet",
         location: "7th from Sun",
@@ -151,6 +164,7 @@ const ssObjects = [
         imageUrl: "images/uranus.webp"
     },
     {
+        id: 13,
         name: "Neptune",
         class: "Ice Giant Planet",
         location: "8th from Sun",
@@ -162,6 +176,7 @@ const ssObjects = [
         imageUrl: "images/neptune.webp"
     },
     {
+        id: 14,
         name: "Triton",
         class: "Planetary Satellite",
         location: "220,500 miles from Neptune",
@@ -173,6 +188,7 @@ const ssObjects = [
         imageUrl: "images/tritonmoon.webp"
     },
     {
+        id: 15,
         name: "Pluto",
         class: "Dwarf Planet",
         location: "Kuiper Belt",
@@ -246,10 +262,10 @@ function removeActive() {
 
 
 function buildDataCard(filtered) {
-	document.querySelector(".pic-grid").innerHTML = "";
+	document.querySelector(".pic-grid");
 	filtered.forEach(object => {
 		let card = document.createElement("section");
-		let name = document.createElement("h3");
+		let name = document.createElement("button");
         let type = document.createElement("p");
 		let location = document.createElement("p");
 		let size = document.createElement("p");
@@ -257,8 +273,10 @@ function buildDataCard(filtered) {
         let temp = document.createElement("p");
         let moon = document.createElement("p");
 		let ring = document.createElement("p");
+        let code = document.createElement("p");
 		let pic = document.createElement("img");
 
+        code.textContent = object.id;
 		name.textContent = object.name;
         type.innerHTML = `<span class="label">Classification:</span> ${object.class}`;
 		location.innerHTML = `<span class="label">Location:</span> ${object.location}`;
@@ -271,6 +289,8 @@ function buildDataCard(filtered) {
 		pic.setAttribute("alt", `${object.name} Temple Picture`);
 		pic.setAttribute("loading", "lazy");
 		pic.setAttribute("width", "340");
+        name.setAttribute("id", `${object.name}`);
+        name.setAttribute("onclick", `displayResult(${object.id})`);
 
 
 		card.appendChild(pic);
@@ -285,5 +305,53 @@ function buildDataCard(filtered) {
 		
 		document.querySelector(".pic-grid").appendChild(card);
 	});
+}
+
+
+function saveName() {
+    const userName = document.getElementById('nameInput').value;
+
+    if (userName != "") {
+    localStorage.setItem('myName', userName);
+    document.getElementById("nameBtn").innerHTML = "Name Saved";
+    document.getElementById("nameBtn").style.background = "green";
+    document.getElementById("nameBtn").style.color = "ghostwhite";
+    }
+    else {
+        document.getElementById("nameBtn").style.color = "brown";
+        document.getElementById("nameBtn").innerHTML = "Enter Name";
+        setTimeout(function(){
+            document.getElementById("nameBtn").style.color = "black";
+            document.getElementById("nameBtn").innerHTML = "Save Name";
+        }, 2000);
+    }
+}
+
+function saveWeight() {
+    const userWeight = document.getElementById('weightInput').value;
+
+    if (userWeight != "") {
+    localStorage.setItem('myWeight', userWeight);
+    document.getElementById("weightBtn").innerHTML = "Weight Saved";
+    document.getElementById("weightBtn").style.background = "green";
+    document.getElementById("weightBtn").style.color = "ghostwhite";
+
+    location.href = "./solar-system.html";
+    }
+    else {
+        document.getElementById("weightBtn").style.color = "brown";
+        document.getElementById("weightBtn").innerHTML = "Enter Weight";
+        setTimeout(function(){
+            document.getElementById("weightBtn").style.color = "black";
+            document.getElementById("weightBtn").innerHTML = "Save Weight";
+        }, 2000);
+    }
+}
+
+function displayResult(planet) {
+    const myObject = planet;
+    localStorage.setItem('objectID', myObject);
+    location.href = "./solar-system-result.html";
+    // document.getElementById("result").textContent = "Hello";
 }
 

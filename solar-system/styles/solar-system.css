@@ -119,17 +119,26 @@ nav {
 }
 
 
-h3 {
-    text-align: center;
-    color: var(--text-color-light);
-}
+
 
 section {
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
     border: 2px solid var(--accent-color);
     padding: 1px;
     box-shadow: 0px 0px 4px 3px var(--accent-color);
     background-color: var(--info-card-background);
+}
+
+section button {
+    margin: 5px auto;
+    min-width: 150px;
+    color: var(--text-color-light);
+    background-color: var(--info-card-background);
+    padding: .3rem;
+    font-size: 1.2rem;
+    border: 1px solid var(--accent-color);
 }
 
 
@@ -140,7 +149,7 @@ section {
     display: grid;
     margin-top: 10px;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(1, 630px);
+    grid-template-rows: repeat(1, 650px);
     grid-gap: 15px;
     align-items: center;
     justify-content: center;
@@ -172,6 +181,22 @@ p {
     width: 95%;
     height: auto;
     margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.lowerPic {
+    border: 2px solid var(--accent-color);
+    border-radius: 8px;
+    box-sizing: border-box;
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.lowerPic img {
+    width: 100%;
+    height: 30%;
+    object-fit: cover;
 }
 
 .banner h3 {
@@ -204,7 +229,7 @@ main {
 
 .entry {
     display: grid;
-    grid-template-columns: 120px 130px;
+    grid-template-columns: 175px 145px;
     row-gap: 30px;
     margin-bottom: 30px;
     justify-content: center;
@@ -213,9 +238,11 @@ main {
 .entry input[type="text"] {
     border: 2px solid var(--primary-color);
     border-radius: 8px;
-    max-width: 5.5rem;
-    padding: .2rem;
+    max-width: 8.5rem;
+    padding: .3rem;
     text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
 .entry label {
@@ -231,7 +258,7 @@ main {
     border-radius: 6px;
     font-size: 1rem;
     font-weight: bold;
-    max-width: 140px;
+    max-width: 150px;
     max-height: 50px;
 }
 
@@ -243,6 +270,10 @@ main {
     border-bottom: solid 8px green;
 }
 
+#result {
+    color: ghostwhite;
+}
+
 
 @media only screen and (max-width: 1775px) {
 
@@ -250,7 +281,7 @@ main {
     display: grid;
     margin-top: 10px;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 630px);
+    grid-template-rows: repeat(4, 650px);
     grid-gap: 5px;
     align-items: center;
     justify-content: center;
@@ -273,7 +304,7 @@ main {
     display: grid;
     margin-top: 10px;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, 630px);
+    grid-template-rows: repeat(5, 650px);
     grid-gap: 5px;
     align-items: center;
     justify-content: center;
@@ -283,13 +314,15 @@ main {
 }
 
 
+
+
 @media only screen and (max-width:1070px) {
 
     .pic-grid{
         display: grid;
         margin-top: 10px;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(1, 630px);
+        grid-template-rows: repeat(1, 650px);
         grid-gap: 15px;
         align-items: center;
         justify-content: center;
@@ -311,7 +344,7 @@ main {
         display: grid;
         margin-top: 10px;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(1, 630px);
+        grid-template-rows: repeat(1, 650px);
         grid-gap: 15px;
         align-items: center;
         justify-content: center;

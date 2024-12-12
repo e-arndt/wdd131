@@ -411,6 +411,11 @@ main {
         padding-bottom: 1rem;
         }
 
+        .result-grid img {
+            height: auto;
+            width: 450px;
+        }
+
 }
 
 

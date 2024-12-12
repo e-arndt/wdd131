@@ -34,7 +34,6 @@ body {
 
 /* Mobile View ***************/
 #menu {
-	/* display: block; */
 	font-size: 1.2rem;
     position: absolute;
     top: 2px;
@@ -66,7 +65,7 @@ body {
 
 
 nav {
-    display: flex;
+    display: block;
 	background-color: var(--primary-color);
     flex: 1 1 auto;
 }
@@ -74,7 +73,6 @@ nav {
 
 .navigation {
 	list-style: none;
-    padding-right: 7rem;
     text-shadow: 2px 2px 3px var(--text-color-dark);
     margin: 0 auto 0 auto;
 }
@@ -87,6 +85,7 @@ nav {
 
 .navigation li {
 	display: none;
+    
 }
 
 
@@ -95,7 +94,7 @@ nav {
 	padding: .75rem;
 	text-align: center;
 	text-decoration: none;
-	color: var(--text-color-dark);
+	color: var(--text-color-light);
 	font-weight: 700;
 	transition: 0.5s;
 	font-size: clamp(1.25rem, 2vmin, 1.5rem);
@@ -141,7 +140,12 @@ section button {
     border: 1px solid var(--accent-color);
 }
 
-
+h3 {
+    margin: 5px auto;
+    color: var(--text-color-light);
+    padding: .3rem;
+    font-size: 1.2rem;
+}
 
 
 .pic-grid {
@@ -160,6 +164,33 @@ section button {
 
 img {
     height: 330px;
+}
+
+
+
+.result-grid {
+    display: grid;
+    grid-gap: 15px;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    padding-bottom: 1rem;
+    
+}
+
+.result-grid img {
+    height: 500px;
+    width: auto;
+}
+
+.result-grid p {
+    text-align: justify;
+    font-size: 1.3rem;
+}
+
+.result-grid .label {
+    font-size: 1.1rem;
+    margin: 0 5px 0 5px;
 }
 
 .label {
@@ -275,7 +306,7 @@ main {
 }
 
 
-@media only screen and (max-width: 1775px) {
+@media only screen and (max-width: 1810px) {
 
     .pic-grid{
     display: grid;
@@ -298,7 +329,7 @@ main {
 }
 
 
-@media only screen and (max-width: 1425px) {
+@media only screen and (max-width: 1430px) {
 
     .pic-grid{
     display: grid;
@@ -316,7 +347,7 @@ main {
 
 
 
-@media only screen and (max-width:1070px) {
+@media only screen and (max-width:1060px) {
 
     .pic-grid{
         display: grid;
@@ -328,17 +359,10 @@ main {
         justify-content: center;
         padding-bottom: 1rem;
         }
-
-    .navigation {
-        list-style: none;
-        margin: 0 auto 0 auto;
-        margin-right: -8.5rem;
-        }
-
 }
 
 
-@media only screen and (max-width:720px) {
+@media only screen and (max-width:705px) {
 
     .pic-grid{
         display: grid;

@@ -12,6 +12,7 @@
     --info-card-background: rgb(56, 56, 56);
     --info-card-text: rgb(230, 205, 12);
     --accent-color: rgb(230, 205, 12);
+    --link-color: rgb(250, 237, 138);
 }
 
 
@@ -29,6 +30,11 @@ h1 {
 body {
 	font-family: Roboto, sans-serif;
     background-color: var(--primary-background);
+    /* background-image: url("../images/galaxy2.webp");
+	background-repeat: no-repeat;
+	background-position: center center;
+  	background-color: var(--primary-background);
+	background-size: cover; */
 }
 
 
@@ -179,8 +185,8 @@ img {
 }
 
 .result-grid img {
-    height: 500px;
-    width: auto;
+    height: auto;
+    width: 490px;
 }
 
 .result-grid p {
@@ -215,6 +221,8 @@ p {
     margin-bottom: 20px;
 }
 
+.welcome
+
 .lowerPic {
     border: 2px solid var(--accent-color);
     border-radius: 8px;
@@ -235,11 +243,23 @@ p {
     padding: 1rem 0 2rem 0;
 }
 
-.intro {
+.intro, .ref-intro {
     display: flex;
     flex-direction: column;
     padding: 0 2rem 1rem 2rem;
 }
+
+.ref-intro {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+.res-link {
+    font-size: 1.5rem;
+    color: var(--link-color);
+}
+
 
 .intro p {
     color: var(--accent-color);
@@ -247,6 +267,14 @@ p {
     font-size: 1.5rem;
     padding-bottom: 1rem;
     margin: 0 auto;
+}
+
+.ref-intro p {
+    color: var(--accent-color);
+    text-shadow: 3px 3px 17px var(--primary-background), -3px -3px 17px var(--primary-background);
+    font-size: 1.5rem;
+    padding-bottom: .5rem;
+    /* margin: 0 auto; */
 }
 
 .makebold {

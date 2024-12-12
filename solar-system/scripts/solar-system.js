@@ -438,7 +438,7 @@ function saveID(planet) {
 function displayResult() {
     const myID = Number(localStorage.getItem('objectID'));
 	buildResultCard(ssObjects.filter(ssobject => ssobject.id == myID));
-    document.querySelector("header > h2").innerHTML = "Your Solar System Object";
+    document.querySelector("header > h2").innerHTML = "Check Your Weight";
 }
 
 largeBodiesLink.addEventListener("click", () => {

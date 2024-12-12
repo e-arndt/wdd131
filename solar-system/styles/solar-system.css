@@ -151,6 +151,7 @@ h3 {
     color: var(--text-color-light);
     padding: .3rem;
     font-size: 1.2rem;
+    margin-left: 15px;
 }
 
 
@@ -197,6 +198,13 @@ img {
 .result-grid .label {
     font-size: 1.1rem;
     margin: 0 5px 0 5px;
+}
+
+.result-grid h3 {
+    margin: 5px auto;
+    color: var(--text-color-light);
+    padding: .3rem;
+    font-size: 1.2rem;
 }
 
 .label {

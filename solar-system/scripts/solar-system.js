@@ -78,7 +78,7 @@ const ssObjects = [
         location: "238,900 miles from Earth",
         circum: 6783.5,
         distance: "93,000,000",
-        temp: "-243.4 - 224.6",
+        temp: "-243 to +224",
         moons: "0",
         rings: "None",
         calc: .166,

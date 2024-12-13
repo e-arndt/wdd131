@@ -4,6 +4,7 @@
 	box-sizing: border-box;
 }
 
+
 :root {
     --primary-color: rgb(213, 125, 17);
     --text-color-light: ghostwhite;
@@ -112,6 +113,7 @@ nav {
 	background-color: var(--accent-color);
 }
 
+
 section button:hover {
 	color: var(--text-color-dark);
 	background-color: var(--accent-color);
@@ -129,8 +131,6 @@ section button:hover {
 }
 
 
-
-
 section {
     display: flex;
     flex-direction: column;
@@ -141,6 +141,7 @@ section {
     background-color: var(--info-card-background);
 }
 
+
 section button {
     margin: 5px auto;
     min-width: 150px;
@@ -150,6 +151,7 @@ section button {
     font-size: 1.2rem;
     border: 1px solid var(--accent-color);
 }
+
 
 h3 {
     margin: 5px auto;
@@ -174,10 +176,10 @@ h3 {
     
 }
 
+
 img {
     height: 330px;
 }
-
 
 
 .result-grid {
@@ -190,20 +192,24 @@ img {
     
 }
 
+
 .result-grid img {
     height: auto;
     width: 490px;
 }
+
 
 .result-grid p {
     text-align: justify;
     font-size: 1.3rem;
 }
 
+
 .result-grid .label {
     font-size: 1.1rem;
     margin: 0 5px 0 5px;
 }
+
 
 .result-grid h3 {
     margin: 5px auto;
@@ -212,16 +218,19 @@ img {
     font-size: 1.2rem;
 }
 
+
 .label {
     color: var(--info-card-text);
     font-size: .9rem;
 }
+
 
 p {
     font-size: 1rem;
     margin: 5px 0 2px 5px;
     color: var(--text-color-light);
 }
+
 
 .welcome {
   	background-color: #000000;
@@ -234,7 +243,6 @@ p {
     margin-bottom: 20px;
 }
 
-.welcome
 
 .lowerPic {
     border: 2px solid var(--accent-color);
@@ -245,16 +253,19 @@ p {
     margin: 0 auto;
 }
 
+
 .lowerPic img {
     width: 100%;
     height: 30%;
     object-fit: cover;
 }
 
+
 .banner h3 {
     font-size: 2rem;
     padding: 1rem 0 2rem 0;
 }
+
 
 .intro, .ref-intro {
     display: flex;
@@ -262,11 +273,13 @@ p {
     padding: 0 2rem 1rem 2rem;
 }
 
+
 .ref-intro {
     display: flex;
     flex-direction: column;
     padding: 1rem 2rem 1rem 2rem;
 }
+
 
 .res-link {
     font-size: 1.5rem;
@@ -282,6 +295,7 @@ p {
     margin: 0 auto;
 }
 
+
 .ref-intro p {
     color: var(--accent-color);
     text-shadow: 3px 3px 17px var(--primary-background), -3px -3px 17px var(--primary-background);
@@ -290,14 +304,17 @@ p {
 
 }
 
+
 .makebold {
     font-weight: bold;
 }
+
 
 main {
     padding-top: 1rem;
     padding-bottom: 2rem;
 }
+
 
 .entry {
     display: grid;
@@ -306,6 +323,7 @@ main {
     margin-bottom: 30px;
     justify-content: center;
 }
+
 
 .entry input[type="text"] {
     border: 2px solid var(--primary-color);
@@ -317,11 +335,13 @@ main {
     font-size: 1.2rem;
 }
 
+
 .entry label {
     color: var(--text-color-light);
     font-size: 1.25rem;
     padding-left: 3rem;
 }
+
 
 .entry button {
     border: solid 1px var(--primary-color);
@@ -334,13 +354,16 @@ main {
     max-height: 50px;
 }
 
+
 .entry input:required {
     border-bottom: solid 8px red;
 }
 
+
 .entry input:required:valid {
     border-bottom: solid 8px green;
 }
+
 
 #result {
     color: ghostwhite;
@@ -394,8 +417,6 @@ main {
     }
 
 }
-
-
 
 
 @media only screen and (max-width:1060px) {
@@ -485,16 +506,19 @@ footer {
     padding: 15px;
 }
 
+
 footer p {
     color: var(--text-color-light);
     text-shadow: 1px 1px 4px var(--text-color-dark);
     font-size: 1em;
 }
 
+
 #resource {
     font-size: 1.2em;
     padding: 5px;
     color: var(--text-color-light);
 }
+
 
 

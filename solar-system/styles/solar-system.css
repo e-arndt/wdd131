@@ -112,6 +112,11 @@ nav {
 	background-color: var(--accent-color);
 }
 
+section button:hover {
+	color: var(--text-color-dark);
+	background-color: var(--accent-color);
+}
+
 
 .show li {
 	display: block;
@@ -282,7 +287,7 @@ p {
     text-shadow: 3px 3px 17px var(--primary-background), -3px -3px 17px var(--primary-background);
     font-size: 1.5rem;
     padding-bottom: .5rem;
-    /* margin: 0 auto; */
+
 }
 
 .makebold {
@@ -451,6 +456,24 @@ main {
         font-size: 1rem;
         }
 
+    .banner h3 {
+        font-size: 1.5rem;
+        padding: 1rem 0 2rem 0;
+    }
+
+    .res-link {
+        font-size: 1.25rem;
+        color: var(--link-color);
+        word-wrap: break-word;
+    }
+
+    .ref-intro p {
+        color: var(--accent-color);
+        text-shadow: 3px 3px 17px var(--primary-background), -3px -3px 17px var(--primary-background);
+        font-size: 1.25rem;
+        padding-bottom: .5rem;
+    
+    }
 }
 
 

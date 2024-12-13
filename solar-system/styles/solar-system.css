@@ -408,7 +408,7 @@ main {
 
         .result-grid img {
             height: auto;
-            width: 375px;
+            width: 400px;
         }
 }
 
@@ -428,7 +428,7 @@ main {
 
     .result-grid img {
         height: auto;
-        width: 330px;
+        width: 375px;
         }
 
     .result-grid .label {

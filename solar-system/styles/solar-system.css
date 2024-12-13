@@ -406,9 +406,19 @@ main {
         padding-bottom: 1rem;
         }
 
-        .result-grid img {
-            height: auto;
-            width: 400px;
+    .result-grid img {
+         height: auto;
+         width: 400px;
+        }
+
+    .result-grid .label {
+        font-size: 1rem;
+        margin: 0 5px 0 5px;
+         }
+    
+    .result-grid p {
+        text-align: justify;
+        font-size: 1.1rem;
         }
 }
 

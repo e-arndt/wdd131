@@ -362,6 +362,11 @@ main {
         text-shadow: 3px 3px 12px var(--accent-color), -3px -3px 12px var(--accent-color);
     }
 
+    .result-grid img {
+        height: auto;
+        width: 475px;
+    }
+
 }
 
 
@@ -376,6 +381,11 @@ main {
     align-items: center;
     justify-content: center;
     padding-bottom: 1rem;
+    }
+
+    .result-grid img {
+        height: auto;
+        width: 450px;
     }
 
 }
@@ -395,6 +405,11 @@ main {
         justify-content: center;
         padding-bottom: 1rem;
         }
+
+        .result-grid img {
+            height: auto;
+            width: 425px;
+        }
 }
 
 
@@ -413,7 +428,7 @@ main {
 
         .result-grid img {
             height: auto;
-            width: 450px;
+            width: 400px;
         }
 
 }

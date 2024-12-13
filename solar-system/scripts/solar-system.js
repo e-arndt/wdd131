@@ -351,7 +351,7 @@ function buildResultCard(filtered) {
         const calcWeight = (userWeight * gravity);
         const newWeight = calcWeight.toFixed(2);
         earthWeight.innerHTML = `<span class="label">${userName} on Earth you weigh:</span> ${userWeight}<span class="label">lbs</span>`;
-        weigh.innerHTML = `<span class="label">On ${object.name} you weight:</span> ${newWeight}<span class="label">lbs</span>`;
+        weigh.innerHTML = `<span class="label">On ${object.name} you weigh:</span> ${newWeight}<span class="label">lbs</span>`;
         type.innerHTML = `<span class="label">Classification:</span> ${object.class}`;
 		location.innerHTML = `<span class="label">Location:</span> ${object.location}`;
 		size.innerHTML = `<span class="label">Circumference:</span> ${object.circum} miles`;

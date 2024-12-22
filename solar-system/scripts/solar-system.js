@@ -216,7 +216,7 @@ const ssObjects = [
     },
     
 	
-	// Add more temple objects here...
+	// Add more solar system objects here...
   ];
 
 
@@ -301,7 +301,7 @@ function buildDataCard(filtered) {
         moon.innerHTML = `<span class="label">Number of Moons:</span> ${ssobject.moons}`;
         ring.innerHTML = `<span class="label">Number of Rings:</span> ${ssobject.rings}`;
 		pic.setAttribute("src", ssobject.imageUrl);
-		pic.setAttribute("alt", `${ssobject.name} Temple Picture`);
+		pic.setAttribute("alt", `${ssobject.name} Object Picture`);
 		pic.setAttribute("loading", "lazy");
 		pic.setAttribute("width", "340");
         name.setAttribute("id", `${ssobject.name}`);

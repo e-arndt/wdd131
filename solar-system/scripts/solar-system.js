@@ -49,7 +49,7 @@ const ssObjects = [
         id: 3,
 	    name: "Venus",
         class: "Terrestrial Planet",
-	    location: "2st from Sun",
+	    location: "2nd from Sun",
         circum: 23627,
 	    distance: "67,429,000",
 	    temp: "867",
